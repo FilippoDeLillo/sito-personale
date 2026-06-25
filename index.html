@@ -68,13 +68,47 @@
 
     <!-- Contatti -->
     <section id="contatti" class="section-padding bg-dark text-white">
-        <div class="container text-center">
-            <h2>Pronto a dare una spinta alla tua presenza online?</h2>
-            <p>Scrivimi per parlarmi del tuo progetto. Ti risponderò con un'analisi chiara e senza termini tecnici incomprensibili.</p>
-            <br>
-            <p><strong>Email:</strong> <a href="mailto:filippomaggio18@gmail.com">filippomaggio18@gmail.com</a></p>
-            <p><strong>Telefono:</strong> <a href="tel:+393490913562">349 091 3562</a></p>
-            <p><strong>Instagram:</strong> <a href="https://instagram.com/filippo.delillo" target="_blank">@filippo.delillo</a></p>
+        <div class="container">
+            <div class="text-center">
+                <h2>Pronto a dare una spinta alla tua presenza online?</h2>
+                <p>Scrivimi per parlarmi del tuo progetto. Ti risponderò con un'analisi chiara e senza termini tecnici incomprensibili.</p>
+            </div>
+
+            <div class="form-container">
+                <form action="https://formspree.io/f/xnjkpzrz" method="POST" class="contact-form" id="contact-form">
+                    
+                    <div class="form-group">
+                        <label for="nome">Nome o Azienda</label>
+                        <input type="text" id="nome" name="nome" required placeholder="Es. Mario Rossi">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Indirizzo Email</label>
+                        <input type="email" id="email" name="email" required placeholder="mario.rossi@email.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="messaggio">Parlami del tuo progetto</label>
+                        <textarea id="messaggio" name="messaggio" rows="5" required placeholder="Di cosa hai bisogno?"></textarea>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="privacy" name="privacy" required>
+                        <label for="privacy">
+                            Ho letto e accetto la <a href="privacy.html" target="_blank">Privacy Policy</a>.
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-submit">Invia Messaggio</button>
+                    <p id="form-status" style="text-align: center; margin-top: 15px; font-weight: 500;"></p>
+                </form>
+            </div>
+
+            <div class="text-center" style="margin-top: 40px;">
+                <p><strong>Email:</strong> <a href="mailto:filippomaggio18@gmail.com">filippomaggio18@gmail.com</a></p>
+                <p><strong>Telefono:</strong> <a href="tel:+393490913562">349 091 3562</a></p>
+                <p><strong>Instagram:</strong> <a href="https://instagram.com/filippo.delillo" target="_blank">@filippo.delillo</a></p>
+            </div>
         </div>
     </section>
 
@@ -82,6 +116,9 @@
     <footer>
         <div class="container text-center">
             <p>&copy; 2026 Filippo De Lillo. Progettato con rigore tecnico.</p>
+            <p style="margin-top: 10px; font-size: 13px;">
+                <a href="privacy.html" style="text-decoration: underline;">Privacy Policy</a>
+            </p>
         </div>
     </footer>
 
