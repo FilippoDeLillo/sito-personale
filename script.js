@@ -51,10 +51,25 @@ if (contactForm) {
             formStatus.style.color = "#ef4444";
         });
     });
-    
+
 window.onload = function() {
     if (contactForm) {
         contactForm.reset();
     }
 };
 }
+
+/* --- ANIMAZIONI ALLO SCORRIMENTO (INTERSECTION OBSERVER) --- */
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show-scroll');
+            observer.unobserve(entry.target); 
+        }
+    });
+}, {
+    threshold: 0.1 
+});
+
+const hiddenElements = document.querySelectorAll('.hidden-scroll');
+hiddenElements.forEach((el) => observer.observe(el));
