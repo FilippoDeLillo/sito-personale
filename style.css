@@ -87,6 +87,15 @@ nav ul li a {
 }
 nav ul li a:hover { color: var(--primary); }
 
+#theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--text-dark);
+}
+
 /* --- HERO --- */
 #hero {
     padding: 100px 0;
@@ -103,7 +112,8 @@ nav ul li a:hover { color: var(--primary); }
     margin-bottom: 20px;
 }
 
-#hero h2 {
+/* Gestisce sia h1 (nuovo) che h2 (vecchio) */
+#hero h1, #hero h2 {
     font-size: 42px;
     font-weight: 700;
     line-height: 1.2;
@@ -125,6 +135,8 @@ nav ul li a:hover { color: var(--primary); }
     border-radius: 6px;
     font-weight: 500;
     transition: background 0.2s;
+    border: none;
+    cursor: pointer;
 }
 
 .btn:hover { background-color: var(--primary-dark); }
@@ -172,6 +184,85 @@ nav ul li a:hover { color: var(--primary); }
     font-size: 15px;
 }
 
+/* --- MODULO DI CONTATTO --- */
+.form-container {
+    max-width: 600px;
+    margin: 40px auto 0 auto;
+    background-color: var(--bg-white);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); 
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.form-group label {
+    color: var(--text-dark);
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    font-family: inherit;
+    font-size: 15px;
+    transition: border-color 0.2s, outline 0.2s, background-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: var(--primary);
+    outline: 2px solid rgba(37, 99, 235, 0.2);
+}
+
+.checkbox-group {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: auto;
+    cursor: pointer;
+}
+
+.checkbox-group label {
+    margin-bottom: 0;
+    color: var(--text-light);
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.checkbox-group a {
+    color: var(--primary);
+    text-decoration: underline;
+}
+
+.btn-submit {
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
 /* --- FOOTER --- */
 footer {
     padding: 30px 0;
@@ -182,9 +273,30 @@ footer {
 
 /* --- RESPONSIVE --- */
 @media (max-width: 768px) {
+    /* Layout Generale */
     header .container, .services-grid {
         flex-direction: column;
     }
     nav ul { margin-top: 20px; }
     nav ul li { margin: 0 15px; }
+
+    /* Fix Modulo Contatto per Smartphone */
+    .form-container {
+        padding: 25px 15px; 
+        margin-top: 25px;
+    }
+    .form-group input,
+    .form-group textarea {
+        padding: 10px 12px;
+        font-size: 14px;
+    }
+    .checkbox-group {
+        align-items: flex-start; 
+    }
+    .checkbox-group input[type="checkbox"] {
+        margin-top: 4px; 
+    }
+    .checkbox-group label {
+        font-size: 12px; 
+    }
 }
