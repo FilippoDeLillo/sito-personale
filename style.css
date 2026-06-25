@@ -180,121 +180,38 @@ footer {
     background-color: var(--bg-light);
 }
 
-/* --- RESPONSIVE --- */
+/* --- RESPONSIVE (SMARTPHONE E TABLET) --- */
 @media (max-width: 768px) {
+    
+    /* 1. Regole per Header e Servizi */
     header .container, .services-grid {
         flex-direction: column;
     }
-    nav ul { margin-top: 20px; }
-    nav ul li { margin: 0 15px; }
-}
+    nav ul { 
+        margin-top: 20px; 
+    }
+    nav ul li { 
+        margin: 0 15px; 
+    }
 
-
-/* --- MODULO DI CONTATTO --- */
-.form-container {
-    max-width: 600px;
-    margin: 40px auto 0 auto;
-    background-color: var(--bg-white);
-    padding: 40px;
-    border-radius: 12px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); 
-}
-
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.form-group {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-}
-
-.form-group label {
-    color: var(--text-dark);
-    font-size: 14px;
-    font-weight: 500;
-    margin-bottom: 8px;
-}
-
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 12px 16px;
-    border: 1px solid var(--border-color);
-    border-radius: 6px;
-    background-color: var(--bg-light);
-    color: var(--text-dark);
-    font-family: inherit;
-    font-size: 15px;
-    transition: border-color 0.2s, outline 0.2s, background-color 0.3s;
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-    border-color: var(--primary);
-    outline: 2px solid rgba(37, 99, 235, 0.2);
-}
-
-.checkbox-group {
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
-}
-
-.checkbox-group input[type="checkbox"] {
-    width: auto;
-    cursor: pointer;
-}
-
-.checkbox-group label {
-    margin-bottom: 0;
-    color: var(--text-light);
-    font-size: 13px;
-    font-weight: 400;
-}
-
-.checkbox-group a {
-    color: var(--primary);
-    text-decoration: underline;
-}
-
-.checkbox-group a:hover {
-    color: var(--primary-dark);
-}
-
-.btn-submit {
-    width: 100%;
-    cursor: pointer;
-    border: none;
-    font-size: 16px;
-    margin-top: 10px;
-}
-
-/* --- OTTIMIZZAZIONE MODULO PER SMARTPHONE --- */
-@media (max-width: 768px) {
+    /* 2. Regole per il Modulo di Contatto */
     .form-container {
         padding: 25px 15px; 
         margin-top: 25px;
     }
-
     .form-group input,
     .form-group textarea {
         padding: 10px 12px;
         font-size: 14px;
     }
-
     .checkbox-group {
         align-items: flex-start; 
     }
-
     .checkbox-group input[type="checkbox"] {
         margin-top: 4px; 
     }
-
     .checkbox-group label {
-        font-size: 12px;  
+        font-size: 12px; 
     }
-}
+    
+} /* <-- QUESTA è la parentesi fondamentale che chiude la "gabbia" mobile */
