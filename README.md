@@ -32,6 +32,6 @@ Credo che la tecnologia debba risolvere problemi, non crearne di nuovi. Il mio p
 
 ## 📫 Contatti
 Sviluppatore web freelance a Lucca.
-- **Email:** filippomaggio18@gmail.com
+- **Email:** filippodelilloweb@gmail.com
 - **Instagram:** [@filippo.delillo](https://instagram.com/filippo.delillo)
 - **Sito:** [https://filippodelillo.it](https://filippodelillo.it)
