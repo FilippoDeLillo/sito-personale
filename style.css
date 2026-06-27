@@ -16,6 +16,8 @@
     --bg-light: #f8fafc; 
     
     --border-color: #e2e8f0;
+
+    --hero-overlay: 255, 255, 255;
 }
 
 .dark-mode {
@@ -26,6 +28,8 @@
     --bg-light: #1e293b; 
     
     --border-color: #334155;
+
+    --hero-overlay: 15,23,42;
 }
 
 body {
@@ -98,7 +102,19 @@ nav ul li a:hover { color: var(--primary); }
 
 /* --- HERO --- */
 #hero {
-    padding: 100px 0;
+    padding: 140px 0; 
+    
+    background: linear-gradient(
+        rgba(var(--hero-overlay), 0.85), 
+        rgba(var(--hero-overlay), 0.85)
+    ),
+    url('sfondo-hero.webp'); 
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    transition: background 0.3s ease; 
 }
 
 .badge {
