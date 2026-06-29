@@ -1,3 +1,8 @@
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
 /* --- RESET E VARIABILI --- */
 * {
     margin: 0;
@@ -126,6 +131,14 @@ nav ul li a:hover { color: var(--primary); }
     font-size: 13px;
     font-weight: 600;
     margin-bottom: 20px;
+
+    animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-6px); } 
+    100% { transform: translateY(0px); }
 }
 
 /* Gestisce sia h1 (nuovo) che h2 (vecchio) */
@@ -153,6 +166,33 @@ nav ul li a:hover { color: var(--primary); }
     transition: background 0.2s;
     border: none;
     cursor: pointer;
+    
+    position: relative;
+    overflow: hidden;
+}
+
+.btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 20%;
+    height: 100%;
+    background: linear-gradient(
+        to right, 
+        rgba(255, 255, 255, 0) 0%, 
+        rgba(255, 255, 255, 0.4) 50%, 
+        rgba(255, 255, 255, 0) 100__
+    );
+    transform: skewX(-25deg);
+}
+
+.btn:hover::after {
+    animation: shine 0.8s ease-in-out;
+}
+
+@keyframes shine {
+    100% { left: 125%; }
 }
 
 .btn:hover { background-color: var(--primary-dark); }
@@ -181,12 +221,16 @@ nav ul li a:hover { color: var(--primary); }
     border: 1px solid var(--border-color);
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
     flex: 1;
-    transition: transform 0.2s, box-shadow 0.2s;
+    
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), 
+                box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), 
+                border-color 0.3s ease;
 }
 
 .service-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    transform: translateY(-8px);  
+    box-shadow: 0 12px 20px -3px rgba(0, 0, 0, 0.08);
+    border-color: var(--primary);  
 }
 
 .service-card h3 {
@@ -382,5 +426,55 @@ footer {
     }
     .checkbox-group label {
         font-size: 12px; 
+    }
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-light);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--text-light);
+    border-radius: 10px;
+    border: 2px solid var(--bg-light);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary);
+}
+
+a:focus-visible, 
+button:focus-visible, 
+input:focus-visible, 
+textarea:focus-visible {
+    outline: 3px solid var(--primary);
+    outline-offset: 3px;
+}
+
+/* --- ANIMAZIONI DEL MODULO DI CONTATTO --- */
+
+/* Effetto shake per segnalare un errore */
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    20%, 60% { transform: translateX(-6px); }
+    40%, 80% { transform: translateX(6px); }
+}
+
+.shake {
+    animation: shake 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
