@@ -3,201 +3,377 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Filippo De Lillo | Sviluppo Web e Ottimizzazione Performance</title>
-    <meta name="description" content="Sviluppatore web freelance a Lucca. Realizzo siti web veloci, sicuri e su misura, unendo le competenze dell'Ingegneria Informatica a un design pulito.">
-    <!-- Font (Inter) -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Filippo De Lillo | Sviluppo Web su misura — Gestionali, Siti Vetrina, Ecommerce</title>
+    <meta name="description" content="Sviluppatore web freelance a Lucca. Realizzo gestionali, siti vetrina ed ecommerce veloci, sicuri e su misura, uniendo le competenze dell'Ingegneria Informatica a un design pulito.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="icon" type="image/png" href="favicon.png">
-    <meta property="og:title" content="Filippo De Lillo | Sviluppatore Web">
-    <meta property="og:description" content="Realizzazione di siti web performanti e su misura.">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <meta property="og:title" content="Filippo De Lillo | Sviluppatore Web — Gestionali, Vetrina, Ecommerce">
+    <meta property="og:description" content="Realizzazione di gestionali, siti vetrina ed ecommerce performanti e su misura.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://filippodelillo.it/">
-    <meta property="og:image" content="https://filippodelillo.it/anteprima.jpg">
+    <meta property="og:image" content="https://filippodelillo.it/anteprima.png">
+    <meta name="twitter:card" content="summary_large_image">
 
-<!-- Canonical URL -->
-<link rel="canonical" href="https://filippodelillo.it/">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://filippodelillo.it/">
 
-<!-- Dati Strutturati Schema.org -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  "name": "Filippo De Lillo",
-  "url": "https://filippodelillo.it/",
-  "description": "Sviluppatore web freelance a Lucca. Realizzo siti web veloci, sicuri e su misura.",
-  "address": {
-    "@type": "55100",
-    "addressLocality": "Lucca",
-    "addressRegion": "Toscana",
-    "addressCountry": "IT"
-  }
-}
-</script>
-
-    
+    <!-- Dati Strutturati Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Filippo De Lillo",
+      "url": "https://filippodelillo.it/",
+      "description": "Sviluppatore web freelance a Lucca. Realizzo gestionali, siti vetrina ed ecommerce veloci, sicuri e su misura.",
+      "address": {
+        "@type": "PostalAddress",
+        "postalCode": "55100",
+        "addressLocality": "Lucca",
+        "addressRegion": "Toscana",
+        "addressCountry": "IT"
+      }
+    }
+    </script>
 </head>
 <body>
 
     <!-- Intestazione -->
     <header>
         <div class="container">
-            <a href="#" class="logo" aria-label="Torna in cima alla pagina">Filippo De Lillo</a>
-            <nav>
-                <ul>
-                    <li><a href="#chi-sono">Chi Sono</a></li>
+            <a href="#" class="logo" aria-label="Torna in cima alla pagina">
+                <span class="mark" aria-hidden="true">FD</span>
+                Filippo De Lillo
+            </a>
+            <nav id="main-nav">
+                <ul class="nav-links">
+                    <li><a href="#chi-sono">Chi sono</a></li>
                     <li><a href="#servizi">Servizi</a></li>
-                    <li><a href="#contatti">Contatti</a></li>
-                    <li><button id="theme-toggle">🌙 Dark Mode</button></li>
+                    <li><a href="#portfolio">Progetti</a></li>
+                    <li><a href="#faq">FAQ</a></li>
                 </ul>
+                <div class="nav-actions">
+                    <a href="#contatti" class="nav-cta">Contattami</a>
+                    <button id="theme-toggle" aria-label="Cambia tema chiaro/scuro">
+                        <svg class="icon-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.4M12 19.6V22M4.9 4.9l1.7 1.7M17.4 17.4l1.7 1.7M2 12h2.4M19.6 12H22M4.9 19.1l1.7-1.7M17.4 6.6l1.7-1.7"/></svg>
+                        <svg class="icon-dark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.8 6.8 0 0 0 10.5 10.5Z"/></svg>
+                    </button>
+                </div>
             </nav>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Apri il menu" aria-expanded="false"><span></span></button>
         </div>
     </header>
+
 <main>
     <!-- Sezione Hero -->
     <section id="hero">
-        <div class="container text-center">
-            <span class="badge">Ingegneria & Web Development</span>
-            <h1>Siti web solidi, sicuri e progettati per il tuo business.</h1>
-            <p>Unisco le competenze dell'Ingegneria Informatica a un design pulito per offrirti un sito che non è solo una vetrina, ma uno strumento veloce e affidabile.</p>
-            <a href="#contatti" class="btn">Richiedi una consulenza</a>
+        <div class="blueprint-grid" aria-hidden="true"></div>
+        <div class="container">
+            <div class="hero-copy">
+                <span class="eyebrow">/&gt; Ingegneria Informatica × Web Development</span>
+                <h1>Siti web solidi, sicuri e <em>progettati</em> per il tuo business.</h1>
+                <p class="lead">Unisco le competenze dell'Ingegneria Informatica a un design pulito per offrirti gestionali, siti vetrina ed ecommerce che non sono solo una vetrina, ma strumenti veloci e affidabili.</p>
+                <div class="btn-row">
+                    <a href="#contatti" class="btn">Richiedi una consulenza</a>
+                    <a href="#portfolio" class="btn btn-ghost">Guarda i progetti</a>
+                </div>
+                <div class="badge-row" aria-hidden="true">
+                    <span>Codice scritto a mano</span>
+                    <span>Zero CMS pesanti</span>
+                    <span>Lucca · Pisa</span>
+                </div>
+            </div>
+
+            <div class="hero-panel" role="img" aria-label="Schema tecnico animato di un'interfaccia web in costruzione">
+                <div class="blueprint-grid" aria-hidden="true"></div>
+                <svg viewBox="0 0 420 390" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- browser frame -->
+                    <rect class="pop" x="26" y="30" width="368" height="330" rx="14" stroke="var(--line-strong)" stroke-width="1.5"/>
+                    <rect class="pop" x="26" y="30" width="368" height="40" rx="14" fill="var(--panel-2)"/>
+                    <circle class="pop" cx="48" cy="50" r="4.5" fill="var(--line-strong)"/>
+                    <circle class="pop" cx="63" cy="50" r="4.5" fill="var(--line-strong)"/>
+                    <circle class="pop" cx="78" cy="50" r="4.5" fill="var(--line-strong)"/>
+                    <rect class="pop" x="120" y="42" width="220" height="16" rx="8" fill="var(--bg)"/>
+
+                    <!-- nav lines -->
+                    <path pathLength="200" class="draw draw-2" d="M52 100 H 190" stroke="var(--teal)" stroke-width="6" stroke-linecap="round"/>
+
+                    <!-- headline block -->
+                    <rect class="pop pop-2" x="52" y="128" width="230" height="14" rx="7" stroke="var(--ink)" stroke-width="1.4"/>
+                    <rect class="pop pop-2" x="52" y="154" width="160" height="10" rx="5" stroke="var(--line-strong)" stroke-width="1.4"/>
+
+                    <!-- button -->
+                    <rect class="pop" x="52" y="182" width="120" height="30" rx="15" fill="var(--amber)"/>
+
+                    <!-- card grid -->
+                    <rect class="pop pop-3" x="52" y="238" width="96" height="92" rx="10" stroke="var(--teal)" stroke-width="1.6"/>
+                    <rect class="pop pop-3" x="162" y="238" width="96" height="92" rx="10" stroke="var(--line-strong)" stroke-width="1.4"/>
+                    <rect class="pop pop-3" x="272" y="238" width="96" height="92" rx="10" stroke="var(--line-strong)" stroke-width="1.4"/>
+                    <circle class="pop" cx="100" cy="272" r="10" fill="var(--teal)" opacity="0.85"/>
+
+                    <!-- coordinate ticks -->
+                    <g class="draw-4" font-family="var(--font-mono)" font-size="9" fill="var(--muted-2)" opacity="0.85">
+                        <text x="342" y="352">240×390</text>
+                        <text x="34" y="352">v1.0</text>
+                    </g>
+                    <path pathLength="200" class="draw draw-4" d="M394 30 L 410 30 M 394 360 L 410 360" stroke="var(--line-strong)" stroke-width="1"/>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stat strip -->
+    <section class="bg-dark" aria-label="Risultati misurati con Google Lighthouse">
+        <div class="container">
+            <div class="stat-strip">
+                <div>
+                    <div class="num"><span data-count="99" data-suffix="">0</span></div>
+                    <div class="label">Performance Lighthouse</div>
+                </div>
+                <div>
+                    <div class="num"><span data-count="100" data-suffix="">0</span></div>
+                    <div class="label">SEO Lighthouse</div>
+                </div>
+                <div>
+                    <div class="num"><span data-count="100" data-suffix="">0</span></div>
+                    <div class="label">Best Practices</div>
+                </div>
+                <div>
+                    <div class="num"><span data-count="0" data-suffix="€/mese">0€/mese</span></div>
+                    <div class="label">Costi di manutenzione</div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Chi Sono -->
-    <section id="chi-sono" class="section-padding bg-light">
-        <div class="container hidden-scroll">
-            <h2>Chi Sono</h2>
-            <p>Il mio percorso nel mondo dello sviluppo software è iniziato tra i banchi di un istituto tecnico a indirizzo informatico e prosegue oggi presso la facoltà di Ingegneria Informatica dell'Università di Pisa. La tecnologia è da sempre il mio ambiente naturale.</p>
-            <br>
-            <p>Sia davanti a una tastiera che nel mio tempo libero, che dedico all'allenamento sportivo, credo fermamente nel valore della disciplina. Cerco di applicare la stessa mentalità a ogni sito web che realizzo: do il massimo per superare le aspettative e non mi accontento di soluzioni approssimative. Il mio obiettivo non è mettermi in mostra, ma mettere le mie competenze tecniche al servizio del tuo progetto, per costruire qualcosa di solido, veloce e che funzioni davvero.</p>
+    <section id="chi-sono" class="section-padding">
+        <div class="container">
+            <span class="eyebrow hidden-scroll">/&gt; Chi sono</span>
+            <div class="about-grid">
+                <div class="about-figure hidden-scroll">
+                    <div class="row"><span>Base</span><strong>Lucca, Toscana</strong></div>
+                    <div class="row"><span>Formazione</span><strong>Ingegneria Informatica, Pisa</strong></div>
+                    <div class="row"><span>Ambiti</span><strong>Gestionali · Vetrina · Ecommerce</strong></div>
+                    <div class="row"><span>Metodo</span><strong>Codice scritto a mano</strong></div>
+                    <div class="row"><span>Disciplina</span><strong>Allenamento quotidiano</strong></div>
+                </div>
+                <div class="about-text hidden-scroll">
+                    <h2>Chi Sono</h2>
+                    <p>Il mio percorso nel mondo dello sviluppo software è iniziato tra i banchi di un istituto tecnico a indirizzo informatico e prosegue oggi presso la facoltà di Ingegneria Informatica dell'Università di Pisa. La tecnologia è da sempre il mio ambiente naturale.</p>
+                    <p>Sia davanti a una tastiera che nel mio tempo libero, che dedico all'allenamento sportivo, credo fermamente nel valore della disciplina. Cerco di applicare la stessa mentalità a ogni sito web che realizzo: do il massimo per superare le aspettative e non mi accontento di soluzioni approssimative. Il mio obiettivo non è mettermi in mostra, ma mettere le mie competenze tecniche al servizio del tuo progetto, per costruire qualcosa di solido, veloce e che funzioni davvero.</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Servizi -->
-    <section id="servizi" class="section-padding">
+    <section id="servizi" class="section-padding bg-light">
         <div class="container">
-            <h2>Cosa posso fare per te</h2>
-            <div class="services-grid">
-                <div class="service-card hidden-scroll">
-                    <h3>Sviluppo Custom</h3>
-                    <p>Siti web programmati da zero. Perfetti per chi cerca prestazioni eccellenti e un design cucito su misura, senza la pesantezza dei sistemi pre-confezionati.</p>
+            <span class="eyebrow hidden-scroll">/&gt; Cosa costruisco</span>
+            <h2 class="hidden-scroll" style="max-width: 20ch; margin-bottom: 44px;">Tre modi diversi di aiutare il tuo business a lavorare meglio online</h2>
+
+            <div class="service-switch hidden-scroll">
+                <div class="service-tabs" role="tablist" aria-label="Tipologie di progetto">
+                    <button class="service-tab active" data-service="gestionali" role="tab" aria-selected="true">
+                        <span class="tag">01 / Backend</span>
+                        <h3>Gestionali</h3>
+                        <p>Software su misura per la gestione di magazzino, ordini, clienti o appuntamenti. Sostituiscono fogli Excel e processi manuali con un unico strumento centralizzato, accessibile da ogni dispositivo.</p>
+                    </button>
+                    <button class="service-tab" data-service="vetrina" role="tab" aria-selected="false">
+                        <span class="tag">02 / Presenza</span>
+                        <h3>Siti Vetrina</h3>
+                        <p>Il biglietto da visita digitale della tua attività: veloce, chiaro, ottimizzato per Google. Racconta chi sei e cosa offri, guidando il visitatore verso un contatto o una richiesta.</p>
+                    </button>
+                    <button class="service-tab" data-service="ecommerce" role="tab" aria-selected="false">
+                        <span class="tag">03 / Vendita</span>
+                        <h3>Ecommerce</h3>
+                        <p>Il tuo negozio aperto 24/7. Catalogo prodotti, carrello e pagamenti integrati in una struttura pensata per convertire i visitatori in clienti, senza rallentamenti.</p>
+                    </button>
                 </div>
-                <div class="service-card hidden-scroll">
-                    <h3>Ottimizzazione Performance</h3>
-                    <p>Il tuo sito attuale è lento? Analizzo l'infrastruttura, ottimizzo il codice e le risorse per farti guadagnare posizioni su Google e trattenere i clienti.</p>
-                </div>
-                <div class="service-card hidden-scroll">
-                    <h3>Soluzioni Dinamiche</h3>
-                    <p>Integrazione di sistemi per la gestione autonoma dei contenuti, ideali se hai bisogno di aggiornare frequentemente un blog o un catalogo prodotti.</p>
+                <div class="service-visual" id="service-visual">
+                    <svg viewBox="0 0 320 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect class="pop" x="10" y="10" width="300" height="240" rx="12" stroke="var(--line-strong)" stroke-width="1.5"/>
+                        <rect class="pop" x="10" y="10" width="86" height="240" stroke="var(--line-strong)" stroke-width="1.4"/>
+                        <rect class="fade" x="26" y="30" width="54" height="8" rx="4" fill="var(--teal)"/>
+                        <rect class="fade" x="26" y="52" width="54" height="8" rx="4" fill="var(--line-strong)"/>
+                        <rect class="fade" x="26" y="74" width="54" height="8" rx="4" fill="var(--line-strong)"/>
+                        <rect class="fade" x="26" y="96" width="54" height="8" rx="4" fill="var(--line-strong)"/>
+                        <rect class="pop" x="112" y="30" width="80" height="60" rx="8" stroke="var(--teal)" stroke-width="1.6"/>
+                        <rect class="pop" x="204" y="30" width="90" height="60" rx="8" stroke="var(--line-strong)" stroke-width="1.4"/>
+                        <rect class="pop" x="112" y="104" width="182" height="120" rx="8" stroke="var(--line-strong)" stroke-width="1.4"/>
+                        <path class="fade" d="M126 130 H270 M126 150 H240 M126 170 H255 M126 190 H210" stroke="var(--line-strong)" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
                 </div>
             </div>
         </div>
     </section>
-    
-    <!-- Perche-->
-     <section id="perche" class="section-padding">
-    <div class="container">
-        <h2 class="text-center" style="margin-bottom: 50px;">Perché un sito web non è una spesa, è un asset</h2>
-        
-        <div class="services-grid">
-            <div class="service-card">
-                <h3>Oltre la vetrina</h3>
-                <p>Un sito professionale lavora per te 24/7. Non è solo un biglietto da visita, ma il tuo ufficio digitale che accoglie, informa e converte visitatori in clienti, ovunque si trovino.</p>
-            </div>
-            <div class="service-card">
-                <h3>L'efficienza è profitto</h3>
-                <p>Google premia la velocità. Un sito lento fa scappare i visitatori entro 3 secondi. Ottimizzare le performance significa abbassare la frequenza di rimbalzo e aumentare le possibilità di chiudere un nuovo contratto.</p>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Metodo -->
-<section id="metodo" class="section-padding bg-light">
-    <div class="container">
-        <h2 class="text-center" style="margin-bottom: 50px;">Il mio metodo</h2>
-        <div class="services-grid">
-            <div class="service-card">
-                <h3>1. Analisi</h3>
-                <p>Ascolto i tuoi obiettivi. Definiamo la soluzione tecnica più efficiente, escludendo ciò che è superfluo per il tuo business.</p>
-            </div>
-            <div class="service-card">
-                <h3>2. Sviluppo</h3>
-                <p>Codice scritto a mano, ottimizzato per la velocità di caricamento. Costruisco strumenti solidi, non semplici contenitori.</p>
-            </div>
-            <div class="service-card">
-                <h3>3. Consegna</h3>
-                <p>Ti consegno un progetto chiavi in mano. Formazione essenziale inclusa, per garantirti piena autonomia operativa.</p>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Portfolio-->
- 
-<section id="portfolio" class="section-padding bg-light">
-    <div class="container hidden-scroll">
-        <h2 class="text-center" style="margin-bottom: 50px;">Progetti Recenti (Anteprime Live)</h2>
-        
-        <div class="portfolio-grid">
-            
-            <div class="portfolio-card">
-                <div class="portfolio-preview">
-                    <iframe src="https://divina.filippomaggio18.workers.dev/" title="Anteprima Live Progetto 1" loading="lazy"></iframe>
-                    
-                    <a href="https://divina.filippomaggio18.workers.dev/" target="_blank" rel="noopener noreferrer" class="portfolio-overlay" aria-label="Visita il sito completo del Progetto 1">
-                        <span>Apri sito live ↗</span>
-                    </a>
+
+    <!-- Templates nascosti per i diagrammi dei servizi -->
+    <template id="visual-gestionali">
+        <svg viewBox="0 0 320 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect class="pop" x="10" y="10" width="300" height="240" rx="12" stroke="var(--line-strong)" stroke-width="1.5"/>
+            <rect class="pop" x="10" y="10" width="86" height="240" stroke="var(--line-strong)" stroke-width="1.4"/>
+            <rect class="fade" x="26" y="30" width="54" height="8" rx="4" fill="var(--teal)"/>
+            <rect class="fade" x="26" y="52" width="54" height="8" rx="4" fill="var(--line-strong)"/>
+            <rect class="fade" x="26" y="74" width="54" height="8" rx="4" fill="var(--line-strong)"/>
+            <rect class="fade" x="26" y="96" width="54" height="8" rx="4" fill="var(--line-strong)"/>
+            <rect class="pop" x="112" y="30" width="80" height="60" rx="8" stroke="var(--teal)" stroke-width="1.6"/>
+            <rect class="pop" x="204" y="30" width="90" height="60" rx="8" stroke="var(--line-strong)" stroke-width="1.4"/>
+            <rect class="pop" x="112" y="104" width="182" height="120" rx="8" stroke="var(--line-strong)" stroke-width="1.4"/>
+            <path class="fade" d="M126 130 H270 M126 150 H240 M126 170 H255 M126 190 H210" stroke="var(--line-strong)" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+    </template>
+    <template id="visual-vetrina">
+        <svg viewBox="0 0 320 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect class="pop" x="10" y="10" width="300" height="240" rx="12" stroke="var(--line-strong)" stroke-width="1.5"/>
+            <rect class="pop" x="26" y="26" width="268" height="70" rx="8" stroke="var(--teal)" stroke-width="1.6"/>
+            <rect class="fade" x="42" y="46" width="120" height="10" rx="5" fill="var(--ink)" opacity="0.55"/>
+            <rect class="fade" x="42" y="64" width="80" height="8" rx="4" fill="var(--line-strong)"/>
+            <rect class="fade" x="230" y="50" width="48" height="20" rx="10" fill="var(--amber)"/>
+            <rect class="pop" x="26" y="112" width="82" height="82" rx="8" stroke="var(--line-strong)" stroke-width="1.4"/>
+            <rect class="pop" x="119" y="112" width="82" height="82" rx="8" stroke="var(--line-strong)" stroke-width="1.4"/>
+            <rect class="pop" x="212" y="112" width="82" height="82" rx="8" stroke="var(--line-strong)" stroke-width="1.4"/>
+            <path class="fade" d="M26 214 H294" stroke="var(--line-strong)" stroke-width="1" stroke-dasharray="3 5"/>
+            <circle class="fade" cx="160" cy="230" r="4" fill="var(--teal)"/>
+        </svg>
+    </template>
+    <template id="visual-ecommerce">
+        <svg viewBox="0 0 320 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect class="pop" x="10" y="10" width="300" height="240" rx="12" stroke="var(--line-strong)" stroke-width="1.5"/>
+            <rect class="pop" x="26" y="26" width="82" height="82" rx="8" stroke="var(--teal)" stroke-width="1.6"/>
+            <rect class="pop" x="119" y="26" width="82" height="82" rx="8" stroke="var(--line-strong)" stroke-width="1.4"/>
+            <rect class="pop" x="212" y="26" width="82" height="82" rx="8" stroke="var(--line-strong)" stroke-width="1.4"/>
+            <rect class="fade" x="34" y="94" width="34" height="7" rx="3.5" fill="var(--line-strong)"/>
+            <rect class="fade" x="127" y="94" width="34" height="7" rx="3.5" fill="var(--line-strong)"/>
+            <rect class="fade" x="220" y="94" width="34" height="7" rx="3.5" fill="var(--line-strong)"/>
+            <rect class="pop" x="26" y="130" width="268" height="100" rx="8" stroke="var(--line-strong)" stroke-width="1.4"/>
+            <circle class="fade" cx="52" cy="156" r="10" fill="var(--amber)" opacity="0.9"/>
+            <path class="fade" d="M74 156 H 250 M74 178 H 220 M74 200 H 190" stroke="var(--line-strong)" stroke-width="2" stroke-linecap="round"/>
+            <rect class="fade" x="212" y="196" width="60" height="22" rx="11" fill="var(--teal)"/>
+        </svg>
+    </template>
+
+    <!-- Perche -->
+    <section id="perche" class="section-padding">
+        <div class="container">
+            <span class="eyebrow hidden-scroll">/&gt; Perché conviene</span>
+            <h2 class="hidden-scroll" style="max-width: 26ch; margin-bottom: 44px;">Un sito web non è una spesa, è un asset</h2>
+            <div class="perche-grid">
+                <div class="info-card hidden-scroll">
+                    <h3>Oltre la vetrina</h3>
+                    <p>Un sito professionale lavora per te 24/7. Non è solo un biglietto da visita, ma il tuo ufficio digitale che accoglie, informa e converte visitatori in clienti, ovunque si trovino.</p>
                 </div>
-                <div class="portfolio-info">
-                    <h3>Schiacciata Divina</h3>
-                    <p>Sito web interamente interattivo caricato in tempo reale. Fai clic sull'anteprima per esplorarlo a schermo intero.</p>
+                <div class="info-card hidden-scroll">
+                    <h3>L'efficienza è profitto</h3>
+                    <p>Google premia la velocità. Un sito lento fa scappare i visitatori entro 3 secondi. Ottimizzare le performance significa abbassare la frequenza di rimbalzo e aumentare le possibilità di chiudere un nuovo contratto.</p>
                 </div>
             </div>
-
         </div>
-    </div>
-</section>
-<!-- Sezione FAQ -->
-<section id="faq" class="section-padding">
-    <div class="container hidden-scroll">
-        <h2 class="text-center" style="margin-bottom: 40px;">Domande Frequenti</h2>
-        <div class="faq-container">
-            
-            <details class="faq-item">
-                <summary>Quanto tempo serve per avere il sito online?</summary>
-                <p>Dipende dalla complessità del progetto. Per un sito professionale o un portfolio, solitamente servono dalle 2 alle 3 settimane. Il mio obiettivo è consegnare un prodotto ottimizzato e curato nei dettagli, senza affrettare i tempi a discapito della qualità.</p>
-            </details>
+    </section>
 
-            <details class="faq-item">
-                <summary>Dovrò pagare dei costi di manutenzione mensili?</summary>
-                <p>No. Sviluppando siti in puro codice senza piattaforme pesanti (come WordPress), il tuo sito non richiederà continui aggiornamenti di plugin per non "rompersi". I tuoi unici costi fissi saranno il dominio e lo spazio server (hosting), solitamente poche decine di euro all'anno.</p>
-            </details>
-
-            <details class="faq-item">
-                <summary>Il sito sarà visibile sui motori di ricerca?</summary>
-                <p>Assolutamente sì. Il codice pulito e i tempi di caricamento istantanei sono i fattori che Google premia di più. Consegno il sito con una struttura SEO-friendly già ottimizzata per facilitare l'indicizzazione.</p>
-            </details>
-
-            <details class="faq-item">
-                <summary>Cosa ti serve da me per iniziare?</summary>
-                <p>Basta una chiacchierata iniziale. Capiremo insieme i tuoi obiettivi, il tuo pubblico e i servizi che offri. Una volta decisi i testi e le immagini di base, mi occuperò io di tutta l'infrastruttura tecnica.</p>
-            </details>
-
+    <!-- Metodo -->
+    <section id="metodo" class="section-padding bg-light">
+        <div class="container">
+            <span class="eyebrow hidden-scroll">/&gt; Come lavoro</span>
+            <h2 class="hidden-scroll" style="max-width: 20ch; margin-bottom: 56px;">Il mio metodo</h2>
+            <div class="timeline">
+                <div class="timeline-step hidden-scroll">
+                    <div class="idx">01</div>
+                    <h3>Analisi</h3>
+                    <p>Ascolto i tuoi obiettivi. Definiamo la soluzione tecnica più efficiente, escludendo ciò che è superfluo per il tuo business.</p>
+                </div>
+                <div class="timeline-step hidden-scroll">
+                    <div class="idx">02</div>
+                    <h3>Sviluppo</h3>
+                    <p>Codice scritto a mano, ottimizzato per la velocità di caricamento. Costruisco strumenti solidi, non semplici contenitori.</p>
+                </div>
+                <div class="timeline-step hidden-scroll">
+                    <div class="idx">03</div>
+                    <h3>Consegna</h3>
+                    <p>Ti consegno un progetto chiavi in mano. Formazione essenziale inclusa, per garantirti piena autonomia operativa.</p>
+                </div>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="section-padding">
+        <div class="container">
+            <span class="eyebrow hidden-scroll">/&gt; Progetti recenti</span>
+            <h2 class="hidden-scroll" style="max-width: 22ch; margin-bottom: 44px;">Anteprime live, non semplici screenshot</h2>
+
+            <div class="portfolio-grid">
+                <div class="portfolio-card hidden-scroll">
+                    <div class="browser-chrome" aria-hidden="true">
+                        <div class="dots"><span></span><span></span><span></span></div>
+                        <div class="url">divina.filippomaggio18.workers.dev</div>
+                    </div>
+                    <div class="portfolio-preview">
+                        <iframe src="https://divina.filippomaggio18.workers.dev/" title="Anteprima Live: Schiacciata Divina" loading="lazy"></iframe>
+                        <a href="https://divina.filippomaggio18.workers.dev/" target="_blank" rel="noopener noreferrer" class="portfolio-overlay" aria-label="Visita il sito completo di Schiacciata Divina">
+                            <span>Apri sito live ↗</span>
+                        </a>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Schiacciata Divina — Sito Vetrina</h3>
+                        <p>Sito web interamente interattivo caricato in tempo reale. Fai clic sull'anteprima per esplorarlo a schermo intero.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section-padding bg-light">
+        <div class="container">
+            <span class="eyebrow hidden-scroll text-center" style="justify-content:center; width:100%;">/&gt; Domande frequenti</span>
+            <h2 class="hidden-scroll text-center" style="margin-bottom: 40px;">Le domande che mi fanno più spesso</h2>
+            <div class="faq-container">
+                <details class="faq-item hidden-scroll">
+                    <summary>Quanto tempo serve per avere il sito online?</summary>
+                    <p>Dipende dalla complessità del progetto. Per un sito professionale o un portfolio, solitamente servono dalle 2 alle 3 settimane. Il mio obiettivo è consegnare un prodotto ottimizzato e curato nei dettagli, senza affrettare i tempi a discapito della qualità.</p>
+                </details>
+                <details class="faq-item hidden-scroll">
+                    <summary>Dovrò pagare dei costi di manutenzione mensili?</summary>
+                    <p>No. Sviluppando siti in puro codice senza piattaforme pesanti (come WordPress), il tuo sito non richiederà continui aggiornamenti di plugin per non "rompersi". I tuoi unici costi fissi saranno il dominio e lo spazio server (hosting), solitamente poche decine di euro all'anno.</p>
+                </details>
+                <details class="faq-item hidden-scroll">
+                    <summary>Il sito sarà visibile sui motori di ricerca?</summary>
+                    <p>Assolutamente sì. Il codice pulito e i tempi di caricamento istantanei sono i fattori che Google premia di più. Consegno il sito con una struttura SEO-friendly già ottimizzata per facilitare l'indicizzazione.</p>
+                </details>
+                <details class="faq-item hidden-scroll">
+                    <summary>Realizzi anche gestionali o ecommerce, non solo siti vetrina?</summary>
+                    <p>Sì. Oltre ai siti vetrina realizzo gestionali su misura per la gestione interna della tua attività ed ecommerce completi di catalogo, carrello e pagamenti, calibrati sulle esigenze reali del tuo business.</p>
+                </details>
+                <details class="faq-item hidden-scroll">
+                    <summary>Cosa ti serve da me per iniziare?</summary>
+                    <p>Basta una chiacchierata iniziale. Capiremo insieme i tuoi obiettivi, il tuo pubblico e i servizi che offri. Una volta decisi i testi e le immagini di base, mi occuperò io di tutta l'infrastruttura tecnica.</p>
+                </details>
+            </div>
+        </div>
+    </section>
 
     <!-- Contatti -->
-    <section id="contatti" class="section-padding bg-dark text-white">
+    <section id="contatti" class="section-padding bg-dark">
         <div class="container">
             <div class="text-center">
+                <span class="eyebrow" style="justify-content:center; width:100%;">/&gt; Parliamone</span>
                 <h2>Pronto a dare una spinta alla tua presenza online?</h2>
                 <p>Scrivimi per parlarmi del tuo progetto. Ti risponderò con un'analisi chiara e senza termini tecnici incomprensibili.</p>
             </div>
 
             <div class="form-container hidden-scroll">
                 <form action="https://formspree.io/f/mpqgdwjz" method="POST" class="contact-form" id="contact-form">
-                    
+
                     <div class="form-group">
                         <label for="nome">Nome o Azienda</label>
                         <input type="text" id="nome" name="nome" required placeholder="Es. Mario Rossi">
@@ -210,7 +386,7 @@
 
                     <div class="form-group">
                         <label for="messaggio">Parlami del tuo progetto</label>
-                        <textarea id="messaggio" name="messaggio" rows="5" required placeholder="Di cosa hai bisogno?"></textarea>
+                        <textarea id="messaggio" name="messaggio" rows="5" required placeholder="Di cosa hai bisogno? Gestionale, sito vetrina o ecommerce?"></textarea>
                     </div>
 
                     <div class="form-group checkbox-group">
@@ -225,30 +401,27 @@
                 </form>
             </div>
 
-            <div class="text-center" style="margin-top: 40px;">
-                <p><strong>Email:</strong> <a href="mailto:filippodelilloweb@gmail.com">filippodelilloweb@gmail.com</a></p>
-                <p><strong>Telefono:</strong> <a href="tel:+393490913562">349 091 3562</a></p>
-                <p><strong>Instagram:</strong> <a href="https://instagram.com/filippo.delillo" target="_blank">@filippo.delillo</a></p>
+            <div class="contact-links">
+                <a href="mailto:filippodelilloweb@gmail.com">filippodelilloweb@gmail.com</a>
+                <a href="tel:+393490913562">349 091 3562</a>
+                <a href="https://instagram.com/filippo.delillo" target="_blank" rel="noopener">@filippo.delillo</a>
             </div>
         </div>
     </section>
 </main>
-    
 
     <!-- Footer -->
     <footer>
-        <div class="container text-center">
+        <div class="container footer-inner">
             <p>&copy; 2026 Filippo De Lillo. Progettato con rigore tecnico.</p>
-            <p style="margin-top: 10px; font-size: 13px;">
-                <a href="privacy.html" style="text-decoration: underline;">Privacy Policy</a>
-            </p>
+            <p><a href="privacy.html" style="text-decoration: underline;">Privacy Policy</a></p>
         </div>
     </footer>
 
     <script src="script.js"></script>
 
     <!-- Cloudflare Web Analytics -->
-     <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "2273468af0ad4e859ba8ec145fa02609"}'></script>
-     <!-- End Cloudflare Web Analytics -->
+    <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "2273468af0ad4e859ba8ec145fa02609"}'></script>
+    <!-- End Cloudflare Web Analytics -->
 </body>
 </html>

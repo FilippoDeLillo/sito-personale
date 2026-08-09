@@ -4,60 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy | Filippo De Lillo</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+    <meta name="robots" content="noindex, follow">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/png" href="favicon.png">
 </head>
 <body>
 
     <header>
         <div class="container">
-            <div class="logo"><a href="index.html">Filippo De Lillo</a></div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">← Torna alla Home</a></li>
-                    <li><button id="theme-toggle">🌙 Dark Mode</button></li>
+            <a href="index.html" class="logo">
+                <span class="mark" aria-hidden="true">FD</span>
+                Filippo De Lillo
+            </a>
+            <nav id="main-nav">
+                <ul class="nav-links">
+                    <li><a href="index.html">← Torna alla home</a></li>
                 </ul>
+                <div class="nav-actions">
+                    <button id="theme-toggle" aria-label="Cambia tema chiaro/scuro">
+                        <svg class="icon-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.4M12 19.6V22M4.9 4.9l1.7 1.7M17.4 17.4l1.7 1.7M2 12h2.4M19.6 12H22M4.9 19.1l1.7-1.7M17.4 6.6l1.7-1.7"/></svg>
+                        <svg class="icon-dark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.8 6.8 0 0 0 10.5 10.5Z"/></svg>
+                    </button>
+                </div>
             </nav>
         </div>
     </header>
 
     <section class="section-padding">
-        <div class="container" style="max-width: 800px;">
-            <h1 style="margin-bottom: 30px; font-size: 32px;">Privacy Policy</h1>
-            
-            <div style="font-size: 15px; color: var(--text-light);">
-                <p>Ultimo aggiornamento: Giugno 2026</p>
-                <br>
-                
-                <h3 style="color: var(--text-dark); margin-bottom: 10px;">1. Titolare del Trattamento</h3>
-                <p>Il Titolare del trattamento dei dati personali è Filippo De Lillo. Per qualsiasi informazione relativa al trattamento dei dati personali è possibile contattare il Titolare all'indirizzo email: <a href="mailto:filippodelilloweb@gmail.com">filippodelilloweb@gmail.com</a>.</p>
-                <br>
+        <div class="container" style="max-width: 760px;">
+            <span class="eyebrow">/&gt; Documento legale</span>
+            <h1 style="font-size: clamp(28px, 4vw, 40px); margin-bottom: 8px;">Privacy Policy</h1>
+            <p style="font-family: var(--font-mono); font-size: 13px; color: var(--muted-2); margin-bottom: 40px;">Ultimo aggiornamento: giugno 2026</p>
 
-                <h3 style="color: var(--text-dark); margin-bottom: 10px;">2. Dati raccolti e Finalità</h3>
-                <p>Tramite il modulo di contatto presente sul sito, vengono raccolti esclusivamente i dati inseriti volontariamente dall'utente (Nome, Indirizzo Email e Messaggio). Questi dati sono utilizzati al solo fine di rispondere alle richieste di informazioni o di consulenza inoltrate dall'utente stesso.</p>
-                <br>
+            <div style="display:flex; flex-direction:column; gap: 30px;">
+                <div>
+                    <h3 style="font-size: 17px; margin-bottom: 8px;">1. Titolare del Trattamento</h3>
+                    <p>Il Titolare del trattamento dei dati personali è Filippo De Lillo. Per qualsiasi informazione relativa al trattamento dei dati personali è possibile contattare il Titolare all'indirizzo email: <a href="mailto:filippodelilloweb@gmail.com" style="text-decoration: underline;">filippodelilloweb@gmail.com</a>.</p>
+                </div>
 
-                <h3 style="color: var(--text-dark); margin-bottom: 10px;">3. Base Giuridica</h3>
-                <p>Il trattamento dei dati si basa sul consenso esplicito fornito dall'utente al momento della compilazione e dell'invio del modulo di contatto (Art. 6, par. 1, lett. a del GDPR).</p>
-                <br>
+                <div>
+                    <h3 style="font-size: 17px; margin-bottom: 8px;">2. Dati raccolti e Finalità</h3>
+                    <p>Tramite il modulo di contatto presente sul sito, vengono raccolti esclusivamente i dati inseriti volontariamente dall'utente (Nome, Indirizzo Email e Messaggio). Questi dati sono utilizzati al solo fine di rispondere alle richieste di informazioni o di consulenza inoltrate dall'utente stesso.</p>
+                </div>
 
-                <h3 style="color: var(--text-dark); margin-bottom: 10px;">4. Conservazione e Condivisione</h3>
-                <p>I dati saranno conservati per un periodo massimo di 12 mesi dalla conclusione della richiesta, salvo obblighi di legge diversi. I dati non verranno mai ceduti, venduti o condivisi con terze parti per alcuna finalità commerciale.</p>
-                <br>
+                <div>
+                    <h3 style="font-size: 17px; margin-bottom: 8px;">3. Base Giuridica</h3>
+                    <p>Il trattamento dei dati si basa sul consenso esplicito fornito dall'utente al momento della compilazione e dell'invio del modulo di contatto (Art. 6, par. 1, lett. a del GDPR).</p>
+                </div>
 
-                <h3 style="color: var(--text-dark); margin-bottom: 10px;">5. Diritti dell'Utente</h3>
-                <p>In qualunque momento, l'utente può esercitare i diritti previsti dagli articoli 15-22 del GDPR, tra cui accesso, rettifica, cancellazione, limitazione del trattamento, opposizione e portabilità dei dati, scrivendo all'indirizzo email del Titolare indicato al punto 1.</p>
+                <div>
+                    <h3 style="font-size: 17px; margin-bottom: 8px;">4. Conservazione e Condivisione</h3>
+                    <p>I dati saranno conservati per un periodo massimo di 12 mesi dalla conclusione della richiesta, salvo obblighi di legge diversi. I dati non verranno mai ceduti, venduti o condivisi con terze parti per alcuna finalità commerciale.</p>
+                </div>
 
-                <h3 style="color: var(--text-dark); margin-bottom: 10px;">6. Fornitori di servizi</h3>
-                <p>Il sito è ospitato tramite GitHub Pages. Durante la navigazione potrebbero essere raccolti dati tecnici necessari al funzionamento del servizio, quali indirizzi IP e log di accesso.</p>
-                <p>Il modulo di contatto utilizza il servizio Formspree per la gestione e l'inoltro dei messaggi. I dati inseriti dall'utente (nome, email e messaggio) vengono trattati da Formspree esclusivamente per consentire la ricezione e la gestione delle richieste inviate tramite il sito.</p>
-                <p>Il sito utilizza il font "Inter" fornito da Google Fonts. Durante il caricamento della pagina, il browser dell'utente può effettuare richieste ai server di Google per scaricare il font necessario alla visualizzazione del sito.</p>
+                <div>
+                    <h3 style="font-size: 17px; margin-bottom: 8px;">5. Diritti dell'Utente</h3>
+                    <p>In qualunque momento, l'utente può esercitare i diritti previsti dagli articoli 15-22 del GDPR, tra cui accesso, rettifica, cancellazione, limitazione del trattamento, opposizione e portabilità dei dati, scrivendo all'indirizzo email del Titolare indicato al punto 1.</p>
+                </div>
+
+                <div>
+                    <h3 style="font-size: 17px; margin-bottom: 8px;">6. Fornitori di servizi</h3>
+                    <p>Il sito è ospitato tramite GitHub Pages. Durante la navigazione potrebbero essere raccolti dati tecnici necessari al funzionamento del servizio, quali indirizzi IP e log di accesso.</p>
+                    <p>Il modulo di contatto utilizza il servizio Formspree per la gestione e l'inoltro dei messaggi. I dati inseriti dall'utente (nome, email e messaggio) vengono trattati da Formspree esclusivamente per consentire la ricezione e la gestione delle richieste inviate tramite il sito.</p>
+                    <p style="margin-bottom:0;">Il sito utilizza i font "Space Grotesk", "Inter" e "JetBrains Mono" forniti da Google Fonts. Durante il caricamento della pagina, il browser dell'utente può effettuare richieste ai server di Google per scaricare i font necessari alla visualizzazione del sito.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <footer>
-        <div class="container text-center">
+        <div class="container footer-inner">
             <p>&copy; 2026 Filippo De Lillo. Progettato con rigore tecnico.</p>
         </div>
     </footer>

@@ -1,0 +1,13 @@
+<svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+  <rect width="256" height="256" rx="56" fill="#0F2A52"/>
+  <rect x="16" y="16" width="224" height="224" rx="42" fill="none" stroke="#4FD8C7" stroke-opacity="0.25" stroke-width="2"/>
+  <!-- monogram F built from drafting strokes -->
+  <g fill="none" stroke="#EAF2FF" stroke-width="22" stroke-linecap="square">
+    <path d="M 88 68 L 88 188"/>
+    <path d="M 88 68 L 172 68"/>
+    <path d="M 88 122 L 152 122"/>
+  </g>
+  <!-- circuit node accent -->
+  <circle cx="172" cy="68" r="12" fill="#F5B94A"/>
+  <circle cx="88" cy="188" r="7" fill="#4FD8C7"/>
+</svg>
